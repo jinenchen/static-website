@@ -24,7 +24,7 @@ body{
 
 main {
   max-width: 720px;
-  margin: 0 0 0 clamp(0px, 15vw - 60px, 200px);
+  margin: 0 auto;
   padding: 64px 16px;
 }
 

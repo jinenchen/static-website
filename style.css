@@ -35,6 +35,24 @@ a:hover {
     color: var(--muted); 
 }
 
+.avatar{
+  width: 122px;
+  height: 122px;
+  margin-bottom: 5px;
+  object-fit: cover;   
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
 h1 {
   font-family: var(--serif);
   font-weight: 400;
@@ -85,8 +103,6 @@ nav {
   flex-wrap: wrap;
   gap: 4px 18px;
   margin-top: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--line);
 }
 nav a { 
     color: var(--muted); text-decoration: none; 

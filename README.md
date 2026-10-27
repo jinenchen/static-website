@@ -1,1 +1,3 @@
-my simple strictly static personal website.
+My javascript-free website. 
+
+Check it out here: https://joshuachen.tech/

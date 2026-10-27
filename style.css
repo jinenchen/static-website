@@ -148,8 +148,8 @@ footer {
 .dots li + li::before {
     content: "\00B7";
     position: absolute;
-    left: -14px
-    color: var(--muted)
+    left: -14px;
+    color: var(--muted);
 }
 
 .email { color: var(--muted); margin: 16px 0; }

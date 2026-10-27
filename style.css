@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Zalando+Sans:wght@200..900&display=swap");
+:root{
+    --text: #272626;
+    --muted: #6b6a66;
+    --line: #d3d3d3;
+    --bg: #fff;
+    --grid: rgba(0, 0, 0, 0.035);
+    --serif: "STIX Two Text", "Iowan Old Style", Georgia, serif;
+    --sans: "Zalando Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+
+body{
+    margin: 0;
+    color: var(--text);
+    background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 16px 16px;
+    background-color: var(--bg);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 0 0 clamp(0px, 15vw - 60px, 200px);
+  padding: 64px 16px;
+}
+
+a { 
+    color: var(--text); text-underline-offset: 3px; 
+}
+a:hover { 
+    color: var(--muted); 
+}
+
+h1 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 16;
+}
+.subtitle {
+    font-family: var(--serif);
+    color: var(--muted);
+    margin: 8px 0 0;
+    border-bottom: 1px dotted var(--muted);
+    display: inline-block;
+}
+
+.label{
+    font-family: var(--serif);
+    color: var(--muted);
+    font-size: 1.1rem;
+    margin: 16px 0 8px;
+}
+
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 12px;
+    border-left: 1px solid var(--line);
+}
+.list li { 
+    margin: 4px 0; 
+}
+
+.note{ 
+    color: var(--muted)
+}
+
+nav {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  margin-top: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+nav a { 
+    color: var(--muted); text-decoration: none; 
+}
+nav a:hover {
+     color: var(--text); 
+    }
+
+.item p { 
+    margin: 2px 0 0; color: var(--muted); 
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+}
+
+.socials {
+  display: flex;        
+  flex-wrap: wrap;      
+  gap: 4px 16px;     
+  margin: 0;
+  padding: 0;           
+  list-style: none;     
+}
+
+.genres {
+  display: flex;        
+  flex-wrap: wrap;      
+  gap: 4px 16px;     
+  margin: 0;
+  padding: 0;           
+  list-style: none;     
+}
+.genres.dots{
+    gap: 4px 24px; overflow: hidden;
+}
+.dots li {
+    position: relative;
+}
+.dots li + li::before {
+    content: "\00B7";
+    position: absolute;
+    left: -14px
+    color: var(--muted)
+}
+
+.email { color: var(--muted); margin: 16px 0; }
+.email a { color: var(--muted); }
+@media(prefers-color-scheme: dark) {
+    :root{
+        --text: #e8e6e1;
+        --muted: #9a988f;
+        --line: #2e2d2a;
+        --bg: #141412;
+        --grid: rgba(255, 255, 255, 0.04);
+    }
+}
